@@ -1,0 +1,10 @@
+---
+- hosts: nodes
+  tasks:
+    - name: create file
+      file:
+        path: /tmp/itworks.txt
+        state: touch
+        owner: foo
+        group: foo
+        mode: '0440'

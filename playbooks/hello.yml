@@ -1,6 +1,5 @@
 ---
 - hosts: nodes
-  remote_user: awxdeploy
   tasks:
     - name: hello
       debug:
