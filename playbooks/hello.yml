@@ -2,11 +2,6 @@
 - hosts: nodes
   remote_user: awxdeploy
   tasks:
-    - name: create file
-      file:
-        path: /tmp/thisworks.txt
-        state: touch
-        owner: awxdeploy
-        group: awxdeploy
-        mode: '0440'
-      
+    - name: hello
+      debug:
+        msg: "hello"
