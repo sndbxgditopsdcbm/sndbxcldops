@@ -5,6 +5,3 @@
       file:
         path: /tmp/itworks.txt
         state: touch
-        owner: foo
-        group: foo
-        mode: '0440'
