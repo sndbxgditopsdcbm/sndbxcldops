@@ -1,0 +1,3 @@
+---
+- name: update firewalld rules
+  import_tasks: update_firewalld.yml

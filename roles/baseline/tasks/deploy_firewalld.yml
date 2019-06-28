@@ -1,0 +1,19 @@
+---
+- yum:
+    name: firewalld
+    state: latest
+
+- firewalld:
+    service: ssh
+    state: enabled
+    offline: true
+    immediate: true
+    permanent: true
+
+- firewalld:
+    service: dhcpv6-client
+    state: disabled
+    offline: true
+    immediate: true
+    permanent: true
+  notify: firewalld service

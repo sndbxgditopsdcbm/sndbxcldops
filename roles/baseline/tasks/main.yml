@@ -1,0 +1,5 @@
+---
+- name: ensure firewalld is on and running with appropriate rules
+  import_tasks: deploy_firewalld.yml
+- name: deploy motd
+  import_tasks: deploy_motd.yml

@@ -1,0 +1,7 @@
+- copy:
+    src: /etc/ansible/roles/baseline/files/motd
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: '0644'
+    follow: yes

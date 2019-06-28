@@ -1,0 +1,11 @@
+---
+- firewalld:
+    service: "{{ item }}"
+    state: enabled
+    offline: true
+    immediate: true
+    permanent: true
+  notify: firewalld service 
+  with_items:
+    - http
+    - https

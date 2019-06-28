@@ -1,0 +1,8 @@
+---
+- name: firewalld service
+  systemd:
+    name: firewalld
+    state: restarted
+    enabled: true
+    daemon_reload: true
+  listen: firewalld service
