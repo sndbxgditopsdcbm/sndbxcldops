@@ -1,5 +1,5 @@
 - copy:
-    src: /etc/ansible/roles/baseline/files/motd
+    src: motd
     dest: /etc/motd
     owner: root
     group: root
