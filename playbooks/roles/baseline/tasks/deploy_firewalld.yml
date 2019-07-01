@@ -3,6 +3,10 @@
     name: firewalld
     state: latest
 
+- systemd:
+    name: firewalld
+    state: started
+
 - firewalld:
     service: ssh
     state: enabled
