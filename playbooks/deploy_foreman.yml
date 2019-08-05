@@ -1,0 +1,5 @@
+---
+- hosts: foreman
+  become: true
+  roles:
+    - foreman
