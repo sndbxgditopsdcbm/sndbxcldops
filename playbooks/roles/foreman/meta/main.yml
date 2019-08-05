@@ -1,0 +1,5 @@
+---
+dependencies:
+  - roles:
+      - baseline
+      - webserver

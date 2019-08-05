@@ -1,0 +1,13 @@
+---
+- firewalld:
+    port: "{{ item }}"
+    state: enabled
+    permanent: true
+    offline: true
+    immediate: true
+  notify: firewalld service
+  with_items:
+    - 8443/tcp
+    - 8140/tcp
+    - 69/udp
+    - 3000/tcp
